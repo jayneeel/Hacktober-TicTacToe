@@ -44,7 +44,7 @@
             android:layout_margin="20dp"
             android:textColor="@color/white"
             android:fontFamily="@font/josefin_sans_bold"
-            android:text="Sign In"
+            android:text="@string/sign_in"
             app:backgroundTint="#860EEB" />
 
         <Button
@@ -56,7 +56,7 @@
             android:layout_margin="20dp"
             android:textColor="@color/white"
             android:fontFamily="@font/josefin_sans_bold"
-            android:text="Log In"
+            android:text="@string/log_in"
             app:backgroundTint="#860EEB" />
 
         <Button
@@ -70,6 +70,7 @@
             android:padding="15dp"
             android:text="Play As Guest"
             android:textColor="@color/white"
+            android:text="@string/play_as_guest"
             app:backgroundTint="@color/teal_200" />
     </LinearLayout>
 

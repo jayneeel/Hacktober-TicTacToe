@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Guest"
+        android:text="@string/guest"
         android:padding="10dp"
         android:textSize="30sp"
         android:gravity="center"
@@ -156,8 +156,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
 
 </RelativeLayout>

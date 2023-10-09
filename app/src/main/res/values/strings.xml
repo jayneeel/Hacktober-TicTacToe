@@ -17,4 +17,5 @@
     <string name="re_typepassword">Re-typePassword</string>
     <string name="register_me">Register Me!</string>
     <string name="already_account">Already I\'ve my account !</string>
+    <string name="already_account">Already I\'ve my account!</string>
 </resources>
