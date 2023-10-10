@@ -45,6 +45,8 @@
             android:ems="10"
             android:fontFamily="@font/josefin_sans_bold"
             android:hint="@string/first_player"
+            android:textColorHint="#CAE2FC"
+
             android:inputType="textPersonName"
             android:textColor="@color/white"
             android:textColorHint="#CAE2FC"
@@ -61,6 +63,7 @@
             android:ems="10"
             android:fontFamily="@font/josefin_sans_bold"
             android:hint="@string/second_player"
+            android:textColorHint="#CAE2FC"
             android:inputType="textPersonName"
             android:textColor="@color/white"
             android:textColorHint="#CAE2FC"

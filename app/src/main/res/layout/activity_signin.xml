@@ -98,6 +98,8 @@
             android:onClick="onClick"
             android:text="@string/already_account"
             android:textColor="#FFFFFF" />
+
+            android:textColor="#0EEB7A" />
     </LinearLayout>
 
 
