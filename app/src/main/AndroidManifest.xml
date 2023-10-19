@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.tictactoe">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="true"
@@ -9,12 +8,13 @@
         android:roundIcon="@mipmap/logottt_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe">
-        <activity android:name=".home.NavigationActivity"></activity>
+        <activity android:name=".home.NavigationActivity" />
         <activity android:name=".auth.SignUpActivity" />
         <activity android:name=".auth.LoginActivity" />
         <activity android:name=".game.GameActivity" />
         <activity android:name=".home.PlayersActivity" />
-        <activity android:name=".splash.SplashActivity">
+        <activity android:name=".splash.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -34,14 +34,25 @@ EditText gname,pass1,pass2,emailS;
                     Toast.makeText(SignUpActivity.this, "Password Didn't match", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
                 String gnameS=gname.getText().toString();
                 String EmailS=emailS.getText().toString();
                 String PassS=pass1.getText().toString();
+
+                if (gnameS.isEmpty() || EmailS.isEmpty() || PassS.isEmpty()){
+                    Toast.makeText(SignUpActivity.this, "Fields Cannot be Empty !", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
                 DBHelper db=new DBHelper(getApplicationContext());
                 String msg=db.SignUp(gnameS,EmailS,PassS);
+
+
+
                 if (msg.equals("Success"))
                 {
-                    Toast.makeText(SignUpActivity.this, "Registered Successfullly", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignUpActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                 }
             }

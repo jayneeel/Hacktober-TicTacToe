@@ -9,11 +9,10 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="391dp"
-        android:layout_height="268dp"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -43,6 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/josefin_sans_bold"
             android:text="@string/sign_in"
             app:backgroundTint="#860EEB" />
@@ -54,6 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="20dp"
+            android:textColor="@color/white"
             android:fontFamily="@font/josefin_sans_bold"
             android:text="@string/log_in"
             app:backgroundTint="#860EEB" />
@@ -68,7 +69,7 @@
             android:fontFamily="@font/josefin_sans_bold"
             android:padding="15dp"
             android:text="@string/play_as_guest"
-
+            android:textColor="@color/white"
             app:backgroundTint="@color/teal_200" />
     </LinearLayout>
 

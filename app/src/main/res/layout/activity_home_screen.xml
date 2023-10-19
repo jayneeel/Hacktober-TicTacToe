@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,17 +9,25 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="391dp"
-        android:layout_height="268dp"
-        android:layout_marginTop="52dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="center"
         app:srcCompat="@drawable/homesl" />
 
     <LinearLayout
-        android:layout_width="332dp"
-        android:layout_height="256dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/img"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,8 +46,10 @@
             android:fontFamily="@font/josefin_sans_bold"
             android:hint="@string/first_player"
             android:textColorHint="#CAE2FC"
+
             android:inputType="textPersonName"
             android:textColor="@color/white"
+            android:textColorHint="#CAE2FC"
             android:textSize="20sp" />
 
         <EditText
@@ -56,6 +66,7 @@
             android:textColorHint="#CAE2FC"
             android:inputType="textPersonName"
             android:textColor="@color/white"
+            android:textColorHint="#CAE2FC"
             android:textSize="20sp" />
 
         <Button
@@ -76,5 +87,4 @@
     </LinearLayout>
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
