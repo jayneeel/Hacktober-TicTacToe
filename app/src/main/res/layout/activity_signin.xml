@@ -99,6 +99,8 @@
             android:text="Already I've my account!"
             android:textColor="#FFFFFF" />
             android:text="@string/already_account"
+            android:textColor="#FFFFFF" />
+
             android:textColor="#0EEB7A" />
     </LinearLayout>
 

@@ -33,6 +33,7 @@
             android:layout_marginTop="55dp"
             android:ems="10"
             android:fontFamily="@font/josefin_sans_bold"
+            android:hint="@string/email_address"
             android:hint="@string/your_email_address"
             android:inputType="textEmailAddress"
             android:textColor="@color/white"
@@ -74,6 +75,7 @@
 
             android:textColor="#FFFFFF"
             android:text="I don't have my account :)"
+            android:textColor="#FFFFFF"
             android:textColor="#0EEB7A"
             android:text="@string/dont_have_my_account"
 

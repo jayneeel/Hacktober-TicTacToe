@@ -71,6 +71,8 @@
             android:text="Play As Guest"
             android:textColor="@color/white"
             android:text="@string/play_as_guest"
+  android:textColor="@color/white"
+
             app:backgroundTint="@color/teal_200" />
     </LinearLayout>
 

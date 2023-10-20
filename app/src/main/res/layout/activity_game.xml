@@ -14,12 +14,18 @@
         android:text="@string/guest"
         android:padding="10dp"
         android:textSize="30sp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:fontFamily="@font/josefin_sans_bold"
         android:textColor="@color/white"
         android:id="@+id/status"/>
 
+
     <ScrollView
+
+    <ScrollView
+        android:id="@+id/scrollView"
+
         android:layout_below="@id/status"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -29,6 +35,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginTop="50dp"
+            android:layout_gravity="center"
             android:gravity="center">
 
 
@@ -41,6 +48,10 @@
                 android:background="#f4eee8"
                 android:id="@+id/frow"
                 android:layout_below="@id/status">
+
+                android:background="#f4eee8"
+                android:id="@+id/frow">
+
 
                 <ImageView
                     android:id="@+id/et1"
@@ -76,6 +87,10 @@
                 android:background="#f4eee8"
                 android:id="@+id/srow"
                 android:layout_below="@id/frow">
+
+                android:background="#f4eee8"
+                android:id="@+id/srow">
+
 
                 <ImageView
                     android:id="@+id/et4"
@@ -113,6 +128,10 @@
 
                 android:layout_below="@id/srow">
 
+                android:id="@+id/trow"
+                android:gravity="center">
+
+
                 <ImageView
                     android:id="@+id/et7"
                     android:layout_width="100dp"
@@ -144,6 +163,7 @@
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_below="@+id/trow"
                 android:layout_centerInParent="true"
                 android:layout_marginTop="40dp"
@@ -151,10 +171,141 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/josefin_sans_bold"
                 android:text="Restart Game"
+
+                android:text="@string/restart_game"
+
                 app:backgroundTint="#CF0000" />
 
         </LinearLayout>
 
     </ScrollView>
+
+
+    <ImageView
+        android:id="@+id/imgWinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="#f4eee8"
+        android:id="@+id/frow"
+        android:layout_marginTop="150dp"
+        android:layout_below="@id/status">
+
+        <ImageView
+            android:id="@+id/et1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/et2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/et3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="#f4eee8"
+        android:id="@+id/srow"
+        android:layout_below="@id/frow">
+
+        <ImageView
+            android:id="@+id/et4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/et5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/et6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#f4eee8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/trow"
+        android:gravity="center"
+
+        android:layout_below="@id/srow">
+
+        <ImageView
+            android:id="@+id/et7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/et8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/et9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@color/themeColor"
+            android:tag="8" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/trow"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#cf0000"
+        android:fontFamily="@font/josefin_sans_bold"
+        android:text="@string/restart_game"
+        app:backgroundTint="#CF0000" />
+
 
 </RelativeLayout>
