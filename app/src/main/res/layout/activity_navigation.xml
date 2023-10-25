@@ -68,8 +68,11 @@
             android:layout_margin="20dp"
             android:fontFamily="@font/josefin_sans_bold"
             android:padding="15dp"
-            android:text="@string/play_as_guest"
+            android:text="Play As Guest"
             android:textColor="@color/white"
+            android:text="@string/play_as_guest"
+  android:textColor="@color/white"
+
             app:backgroundTint="@color/teal_200" />
     </LinearLayout>
 

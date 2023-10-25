@@ -96,6 +96,8 @@
             android:layout_marginTop="15dp"
             android:fontFamily="@font/josefin_sans_bold"
             android:onClick="onClick"
+            android:text="Already I've my account!"
+            android:textColor="#FFFFFF" />
             android:text="@string/already_account"
             android:textColor="#FFFFFF" />
 

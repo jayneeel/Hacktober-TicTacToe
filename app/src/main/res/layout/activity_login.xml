@@ -72,10 +72,13 @@
             android:fontFamily="@font/josefin_sans_bold"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            android:textColor="#FFFFFF"
 
+            android:textColor="#FFFFFF"
+            android:text="I don't have my account :)"
+            android:textColor="#FFFFFF"
             android:textColor="#0EEB7A"
             android:text="@string/dont_have_my_account"
+
             android:onClick="onClick" />
 
     </LinearLayout>
